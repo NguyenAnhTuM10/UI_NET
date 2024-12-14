@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Phần mềm thi bằng lái xe A2</title>
+        <link rel="stylesheet" href="contest/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>PHẦN MỀM THI BẰNG LÁI XE A2 ONLINE 2024</h1>
+            <div class="main">
+                <div class="sidebar">
+                    <h2>Câu hỏi | Đề số: 01</h2>
+                    <div class="question-list" id="question-list">
+                        <!-- Các nút câu hỏi sẽ được tự động thêm bằng JS -->
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 id="question-title">Câu hỏi 1:</h2>
+                    <p id="question-text">
+                        Phần của đường bộ được sử dụng cho các phương tiện giao
+                        thông qua lại là gì?
+                    </p>
+                    <div class="answers" id="answers">
+                        <!-- Các đáp án sẽ được tự động thêm bằng JS -->
+                    </div>
+                    <div class="navigation">
+                        <button onclick="previousQuestion()">Câu trước</button>
+                        <button onclick="nextQuestion()">Câu tiếp theo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <!-- <p>
+                    Thời gian còn lại:
+                    <span class="time" id="timer">18:53</span>
+                </p> -->
+                <div
+                    id="countdown"
+                    style="font-size: 18px; font-weight: bold; margin-top: 10px"
+                >
+                    <span style="color: black">Thời gian còn lại:</span>
+                    <span id="timer" style="color: blue">20:00</span>
+                </div>
+
+                <button class="submit" onclick="submitQuiz()">
+                    KẾT THÚC BÀI THI
+                </button>
+            </div>
+        </div>
+        <script src="contest/script.js"></script>
+    </body>
+</html>
